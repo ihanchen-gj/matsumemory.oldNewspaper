@@ -1,0 +1,141 @@
+fieldset
+  padding: 0
+  margin: 0
+  border: 0
+  min-width: 0
+
+legend,
+label
+  display: inline-block
+  max-width: 100%
+  margin: 0 5px 8px 0
+
+input
+  +fontT(1em)
+input[type="radio"],
+input[type="checkbox"]
+  margin: 4px 0 0
+  line-height: normal
+  vertical-align: middle
+  display: none
+
+input[type="checkbox"]+label, input[type="radio"]+label
+  display: inline-block
+  padding: 0 5px 0 25px
+  min-width: 20px
+  height: 20px
+  line-height: 20px
+  cursor: pointer
+input[type="checkbox"]+label
+  background: url(../images/check.svg) 0 0 no-repeat
+input[type="radio"]+label
+  background: url(../images/radio.svg) 0 0 no-repeat
+input[type="checkbox"]:checked+label
+  background: url(../images/check.svg) 0 -20px no-repeat
+input[type="radio"]:checked+label
+  background: url(../images/radio.svg) 0 -20px no-repeat
+
+// select[multiple],
+// select[size]
+//   height: auto
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus
+  outline: 5px auto -webkit-focus-ring-color
+  outline-offset: -2px
+
+// textarea
+// input[type="range"]
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+
+.form-group
+  margin-bottom: 20px
+  &:before,&:after
+    display: table
+    content: " "
+    clear: both
+
+.form-control
+  display: block
+  width: 100%
+  padding: 10px 20px
+  color: darken($WHITEcolor, 100%)
+  border: 1px solid darken($WHITEcolor, 0%)
+  border-radius: 4px
+  font-family: $font-family
+  &:focus,&:hover
+    // +box-shadow(0 0 15px 0 darken($WHITEcolor, 13.5%))
+    border: 1px solid darken($WHITEcolor, 0%)
+    outline: none
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] &
+    background: darken($WHITEcolor, 10%)
+    opacity: 1
+    cursor: not-allowed
+.formFieldset-control
+  padding: 12px 10px
+  border: 1px solid darken($WHITEcolor, 0%)
+  border-radius: 4px
+
+.form-addon
+  white-space: nowrap
+  vertical-align: middle
+  +distanceMP(0,12px 10px)
+  border-radius: 4px 0 0 4px
+  border: 1px solid darken($WHITEcolor, 13.5%)
+  background: darken($WHITEcolor, 10.5%)
+  &+.form-control
+    border-radius: 0 4px 4px 0
+    border-left: none
+.form-addonGroup
+  display: flex
+
+.form-fieldset
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .col-4
+    width: calc((100% / 3 - 8px))
+  .col-6
+    width: calc((100% / 2 - 8px))
+
+.form-extra
+  margin-top: 10px
+  margin-left: 10px
+  color: darken($WHITEcolor, 41%)
+  +fontT-sm
+
+// input 提示字
++input-placeholder(darken($WHITEcolor, 41%))
+
+.has-feedback
+  position: relative
+.has-success
+  background: $CIScolorA
+.has-warning
+  background: $REDcolor
+.has-error
+  .form-control, .formFieldset-control, .form-addon
+    border-color: $REDcolor
+
+.errMsg
+  padding: 5px 0
+  color: $REDcolor
+  font-size: $font-size
+  font-weight: 600

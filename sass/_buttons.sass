@@ -1,0 +1,101 @@
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 11px 20px
+  touch-action: manipulation
+  white-space: nowrap
+  line-height: 1.4em
+  letter-spacing: 0.02em
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active
+    border: none
+    outline: none
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+    cursor: not-allowed
+//繼續
+.bn-keep
+  color: darken($WHITEcolor, 0%)
+  background: darken($CIScolorA, 0%)
+  &:hover, &:focus
+    background: darken($CIScolorA, 5%)
+    -pie-background: darken($WHITEcolor, 10.5%)
+    color: darken($WHITEcolor, 0%)
+//離開
+.bn-out
+  border: 1px solid darken($WHITEcolor, 10.5%)
+  color: darken($WHITEcolor, 41%)
+  background: darken($WHITEcolor, 0%)
+  &:hover, &:focus
+    background: darken($WHITEcolor, 5.5%)
+    -pie-background: darken($WHITEcolor, 5.5%)
+    border: 1px solid darken($WHITEcolor, 20.5%)
+// 文字連結
+.bn-link
+  padding: 5px
+  color: darken($CIScolorA, 0%)
+  +fontT-sm
+  letter-spacing: -0.05px
+// FB
+.bn-fb
+  color: darken($WHITEcolor, 0%)
+  background: darken($FBcolor, 0%)
+  &:hover, &:focus
+    background: darken($FBcolor, 5%)
+    color: darken($WHITEcolor, 0%)
+// Google
+.bn-google
+  color: darken($WHITEcolor, 0%)
+  background: darken($google, 0%)
+  &:hover, &:focus
+    background: darken($google, 5%)
+    color: darken($WHITEcolor, 0%)
+
+.btn-group
+  display: inline-block
+  position: relative
+  vertical-align: middle
+.btn-lg,
+.btn-group-lg > .btn
+  padding: 10px 20px
+  font-size: $font-size-lg
+.btn-md,
+.btn-group-md > .btn
+  padding: 10px 20px
+  font-size: $font-size-md
+.btn-sm,
+.btn-group-sm > .btn
+  padding: 5px
+.btn-xs,
+.btn-group-xs > .btn
+  padding: 1px 5px
+
+.btn-block
+  display: block
+  width: 100%
+
+.btn-block + .btn-block
+  margin-top: 5px
+
+.btn-radius
+  border-radius: 35px
+
+.close
+  cursor: pointer
+  background: none
+  border: none
+
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"]
+//   padding: 5px
+//   &.btn-block
+//     width: 100%

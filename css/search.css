@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  background: url(../images/search-bg.jpg) no-repeat 0 -50px;
+  background-size: 100%;
+}
+
+#lsdv .logo {
+  padding: 35px 0;
+}
+#lsdv .search {
+  padding: 35px 5px;
+}
+#lsdv .list {
+  height: calc(100vh - 145px);
+  padding: 20px 0;
+  background: #f7f7f7;
+}
+#lsdv .list-inner {
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 15px 0 #f2f2f2;
+}
+#lsdv .list .title {
+  font-size: 1em;
+  font-weight: 600;
+}
+#lsdv .list .date {
+  font-size: 0.7em;
+  font-weight: 500;
+}/*# sourceMappingURL=search.css.map */

@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+}
+
+#lsdv {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#lsdv .logo {
+  padding: 60px 0;
+  text-align: center;
+}
+#lsdv .newspaper {
+  padding: 50px;
+}
+#lsdv .txt {
+  min-width: 55%;
+  position: absolute;
+  bottom: 58px;
+  left: 58px;
+  padding: 20px 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0.7490196078);
+}
+#lsdv .txt h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+}/*# sourceMappingURL=index.css.map */

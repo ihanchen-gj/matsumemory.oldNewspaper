@@ -1,0 +1,28 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+
+body
+  height: 100vh
+  background: url(../images/search-bg.jpg) no-repeat 0 -50px
+  background-size: 100%
+#lsdv
+  .logo
+    padding: 35px 0
+  .search
+    padding: 35px 5px
+  .list
+    height: calc(100vh - 145px)
+    padding: 20px 0
+    background: darken($WHITEcolor, 3%)
+    &-inner
+      margin: 10px
+      padding: 10px
+      background: darken($WHITEcolor, 0%)
+      +box-shadow(0 0 15px 0 darken($WHITEcolor, 5%))
+    .title
+      font-size: $font-size
+      font-weight: 600
+    .date
+      font-size: $font-size-xs
+      font-weight: 500
