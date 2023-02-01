@@ -47,13 +47,17 @@ include_once("frame.php");
       <div class="container">
 
         <div class="tabs">
-          <div class="tab">馬祖日報</div>
+          <div class="tab on">馬祖日報</div>
           <div class="tab">東湧日報</div>
         </div>
+
+        <div class="">共 99 筆資料</div>
 
         <?php include("./_list.php"); ?>
       </div>
     </div>
+
+    <?php include("./_modal.php"); ?>
   </div>
 </body>
 

@@ -1,31 +1,109 @@
 body {
   height: 100vh;
-  background: url(../images/search-bg.jpg) no-repeat 0 -50px;
+  background: url(../images/search-bg.jpg) no-repeat 0 0;
   background-size: 100%;
 }
 
+#lsdv .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lsdv .modal-dialog {
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  z-index: 1010;
+}
+#lsdv .modal-img {
+  height: 550px;
+}
+#lsdv .modal-close {
+  position: relative;
+}
+#lsdv .modal-close::after {
+  display: block;
+  position: absolute;
+  right: -50px;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: white;
+  transform: rotate(45deg);
+}
+#lsdv .modal-close::before {
+  display: block;
+  position: absolute;
+  right: -50px;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: white;
+  transform: rotate(135deg);
+}
+#lsdv .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: black;
+  opacity: 0.6;
+}
 #lsdv .logo {
   padding: 35px 0;
 }
 #lsdv .search {
   padding: 35px 5px;
 }
+#lsdv .tabs {
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+}
+#lsdv .tabs .tab {
+  display: inline-flex;
+  padding: 20px 20px 18px;
+  border-bottom: 3px solid #f7f7f7;
+  font-weight: 600;
+  font-size: 1.15em;
+  color: gray;
+  cursor: pointer;
+}
+#lsdv .tabs .tab:hover {
+  color: #1e8891;
+}
+#lsdv .tabs .tab.on {
+  color: #1e8891;
+  border-bottom-color: #1e8891;
+}
 #lsdv .list {
-  height: calc(100vh - 145px);
-  padding: 20px 0;
+  padding-bottom: 20px;
   background: #f7f7f7;
 }
+#lsdv .list .col-xs-3:nth-child(4n+1) {
+  clear: both;
+}
 #lsdv .list-inner {
-  margin: 10px;
+  margin: 20px 10px 0;
   padding: 10px;
   background: white;
   box-shadow: 0 0 15px 0 #f2f2f2;
+  cursor: pointer;
 }
-#lsdv .list .title {
+#lsdv .list-inner:hover {
+  box-shadow: 0 0 15px 0 #d9d9d9;
+}
+#lsdv .title {
   font-size: 1em;
   font-weight: 600;
 }
-#lsdv .list .date {
+#lsdv .date {
   font-size: 0.7em;
   font-weight: 500;
 }/*# sourceMappingURL=search.css.map */

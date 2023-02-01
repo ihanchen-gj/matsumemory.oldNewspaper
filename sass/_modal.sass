@@ -1,0 +1,45 @@
+.modal
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  &-dialog
+    position: relative
+    padding: 15px
+    background-color: darken($WHITEcolor, 0%)
+    z-index: $zindex-lightboxEnlar
+  &-img
+    height: 550px
+  &-close
+    position: relative
+    &::after
+      display: block
+      position: absolute
+      right: -50px
+      content: ''
+      width: 30px
+      height: 3px
+      background: darken($WHITEcolor, 0%)
+      transform: rotate(45deg)
+    &::before
+      display: block
+      position: absolute
+      right: -50px
+      content: ''
+      width: 30px
+      height: 3px
+      background: darken($WHITEcolor, 0%)
+      transform: rotate(135deg)
+  &-backdrop
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: $zindex-floor
+    background-color: darken($WHITEcolor, 100%)
+    opacity: 0.6
